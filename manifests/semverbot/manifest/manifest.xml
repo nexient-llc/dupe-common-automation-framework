@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    This manifest sets up semverbot components which is is a dependency of
+    anything in the Nexient Platform space.
+-->
+<manifest>
+  <project name="caf-components-platform" path="components/platform" remote="launch-dso-platform">
+
+    <linkfile src="linkfiles/.semverbot.toml" dest=".semverbot.toml" />
+  </project>
+</manifest>
