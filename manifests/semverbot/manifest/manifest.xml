@@ -4,7 +4,7 @@
     anything in the Nexient Platform space.
 -->
 <manifest>
-  <project name="caf-components-platform" path="components/platform" remote="launch-dso-platform">
+  <project name="caf-components-platform" path="components/platform" remote="launch-dso-platform" revision="main">
 
     <linkfile src="linkfiles/.semverbot.toml" dest=".semverbot.toml" />
   </project>
