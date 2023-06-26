@@ -29,6 +29,9 @@ GITBASE ?= https://github.com/nexient-llc/
 GITREV ?= main
 export GITBASE GITREV
 
+# Include project level defaults (env vars, etc.)
+-include Makefile.includes
+
 # Set to true in a pipeline context
 IS_PIPELINE ?= false
 
