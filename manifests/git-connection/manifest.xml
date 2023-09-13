@@ -3,6 +3,6 @@
     This sets up the git connection and baselines
 -->
 <manifest>
-  <remote name="launch-dso-platform" fetch="${GITBASE}" revision="${GITREV}"/>
+  <remote name="launch-dso-platform" fetch="${GITBASE}" dso_override_attrbiute_revision="${GITREV}"/>
   <!-- <default remote="launch-dso-platform" revision="update" /> -->
 </manifest>
