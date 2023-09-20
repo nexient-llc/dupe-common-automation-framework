@@ -28,12 +28,12 @@ An example using [`manifests/terraform_modules/seed/manifest.xml`](./manifests/t
 
 ```
 REPO_MANIFESTS_URL ?= https://github.com/nexient-llc/common-automation-framework.git
-REPO_BRANCH ?= main
+REPO_MANIFEST_VER ?= refs/tags/1.0.0-example
 REPO_MANIFEST ?= manifests/terraform_modules/seed/manifest.xml
 
 # Settings to pull in nexient version of repo:
 REPO_URL ?= https://github.com/nexient-llc/git-repo
-REPO_REV ?= envsubst
+REPO_REV ?= refs/tags/v2.10.1-nexient
 
 export REPO_REV
 export REPO_URL
@@ -42,7 +42,7 @@ export REPO_URL
 configure: configure-git-hooks
 	repo --color=never init --no-repo-verify \
 		-u "$(REPO_MANIFESTS_URL)" \
-		-b "$(REPO_BRANCH)" \
+		-b "$(REPO_MANIFEST_VER)" \
 		-m "$(REPO_MANIFEST)"
 	repo envsubst
 	repo sync
